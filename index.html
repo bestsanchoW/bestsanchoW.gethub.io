@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language School</title>
+</head>
+
+<body>
+  <script>
+    function hideImage(element) {
+    element.classList.add('hidden');
+  }
+  function showElement() {
+  var hiddenElement1 = document.getElementById("hiddenElement1");
+  hiddenElement1.classList.remove("hidden");
+  var hiddenElement2 = document.getElementById("hiddenElement2");
+  hiddenElement2.classList.remove("hidden");
+}
+  </script>
+  <div class="fon">
+  </div>
+  <div class="div1">
+    <div class="div1a">
+      <div class="div1aa">
+        <p class="textWhite text3 indent0bottom indent0top">Welcome to the Language School!</p>
+      </div>
+    </div>
+  </div>  
+  <div class="div2">
+    <div class="divInner">
+      <a id="prAbout">
+        <br>
+      </a>
+    <h1 class="titleGreen">About us</h1>
+    <p class="indent0bottom"><b><i>Какой-то текст приветствия...</i></b></p>
+    <p class="indent0top">Обучаем всех желающих английскому, тайскому и китайскому языкам.</p>
+    <p class="indent0bottom"><b><i>Почему стоит выбрать именно нас?</i></b></p>
+    <ul>
+      <li class="size1">Гарантия получения визы ED.</li>
+      <li class="size1">Одна из самых низких цен на острове.</li>
+      <li class="size1">Возможность изучения сразу несколько языков без дополнительной оплаты.</li>
+      <li class="size1">Удобное расположение в 10мин от ТЦ "Cental" и в 10-15мин от пляжей Ката и Карон.</li>
+      <li class="size1">Кроме обучения у нас проводятся различные мероприятия и игры.</li>  
+    </ul>
+    <p class="indent0bottom"><i>Приглашаем всех желающих обучаться вместе с нами.</i></p>
+      <div class="div3">
+        <a id="pr1">
+          <br>
+        </a>
+        <div class="divInner">
+        <h1 class="titleGreen" class="indent0top h1link">Объявления</h1>
+        <ul>
+        <li class="announcement">В пятницу в 11:00 в кабинете №4 на 3 этаже будем играть в мафию! Приглашаем всех желающих, будет интересно.</li>
+        <li class="announcement">Текст ещё одного объявления</li>
+        </ul>
+        </div>
+        <a id="pr2">
+          <br>
+        </a>
+      </div>
+      <div class="div4"><h1 class="titleGreen">Расписание</h1>
+        <table width="100%">
+          <caption><b>June</b></caption>
+          <thead>
+            <tr>
+              <td><b>Time</b></td>
+              <td><font color = "red"><b>Sun.</b></font></td>
+              <td><b>Mon.</b></td>
+              <td><b>Tues.</b></td>
+              <td><b>Wed.</b></td>
+              <td><b>Thurs.</b></td>
+              <td><b>Fri.</b></td>
+              <td><font color = "red"><b>Sat.</b></font></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:00 - <br>10:30</td>
+              <td></td>
+              <td></td>
+              <td class="thaiL">Thai<br>language<br>beginner</td>
+              <td class="engLB">English<br>language<br>beginner</td>
+              <td class="thaiL">Thai<br>language<br>beginner</td>
+              <td class="engLB">English<br>language<br>beginner</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>11:00 - <br>12:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="engLI">English<br>language<br>intermediate</td>
+              <td></td>
+              <td class="engLI">English<br>language<br>intermediate</td>
+              <td></td>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table>
+      </div>
+      <div class="divfoto">
+        <a id="pr3">
+          <br>
+        </a>
+        <h1 class="titleGreen">Фотографии</h1>
+        <img class="foto3 foto" src="images/img3.jpg" onclick="showElement()" 
+                width="450"
+                height="350">
+        <img class="foto1 foto" src="images/img1.jpg" onclick="hideImage(this)"
+                width="450"
+                height="350">
+        <img class="foto2 foto" src="images/img2.jpg" onclick="hideImage(this)"
+                width="450"
+                height="350">        
+        <img id="hiddenElement1" class="foto1 foto hidden" src="images/img1.jpg" onclick="hideImage(this)"
+                width="450"
+                height="350">
+        <img id="hiddenElement2" class="foto2 foto hidden" src="images/img2.jpg" onclick="hideImage(this)"
+                width="450"
+                height="350">
+      </div>
+      <div class="pr4">
+        <a id="pr4"><br></a>
+        <h1 class="titleGreen">Контакты и локация</h1>
+        <table width="100%" class="location container contactTable">
+          <caption class="location size1"><p><i>Телефон и whatsapp для связи:</i></p></caption>
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="location wid120">
+                <img src="images/call.png"
+                width="50"
+                height="50">
+                <img src="images/whatsapp.png"
+                width="50"
+                height="50">
+              </td>
+              <td class="location size1 contactCell">+66(...).....</td>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table>
+      </div>
+      <div class="pr5">
+        <a id="pr5">
+          <br>
+        </a>
+        <table width="100%" class="location container">
+          <caption class="location size1"><p><i>Мы находимся по адресу:</i></p></caption>
+          <thead class="location">
+          </thead class="location">
+          <tbody class="location">
+            <tr class="location">
+              <td class="location">
+                <img src="Images/location.png"
+                width="50"
+                height="50"></td>
+              <td class="location size1">18/5 Chao Fah Tawan Tok Rd, Chalong, Mueang Phuket District, Chalong, Phuket, 83130</td>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table>
+        <section class="map">
+          <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.3650884477897!2d98.33591267452948!3d7.856806192164924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30502f983adb528d%3A0xeb2330bd96d20178!2sBoreiko%20Language%20School%20(BLS)%20ED%20Visa%20and%20Visa%20service!5e0!3m2!1sen!2sth!4v1687432298205!5m2!1sen!2sth" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+        <p class="indent0top">До нас также можно добраться общественным транспортом от Пхукет Тауна, ТЦ "Cental"(Фестиваль) и от пляжей Ката и Карон</p>
+      </div>
+  </div>
+  </div>
+  
+
+  <div class="div0">
+    <div class="dropdown">
+      <span>
+        <button class="menuBut">
+          <b>
+            <p class="menu indent0bottom">_____</p>
+            <p class="menu indent0bottom">_____</p>
+            <p class="menu">_____</p>
+          </b>
+        </button>
+      </span>
+      <div class="dropdown-content">
+        <a class="linkI1 linkJ1" href="#prAbout">О нас</a>
+        <a class="linkI1 linkJ1" href="#pr1">Объявления</a>
+        <a class="linkI1 linkJ1" href="#pr2">Расписание</a>
+        <a class="linkI1 linkJ3" href="#pr3">Фотографии</a>
+        <a class="linkI1 linkJ4" href="#pr4">Контакты</a>
+        <a class="linkI1 linkJ2" href="#pr5">Локация</a>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
